@@ -37,6 +37,7 @@ For the installation, you need to perform the following steps
 - go to the preferences menu option on the Raspberry-Pi and start 'Raspberry Pi Configuration'
 - go to the localisation tab en set your wifi country
 - connect the Raspberry-Pi to your wifi using the icon on the top of your screen
+- connect the compute stick and the webcam to the Raspberry-Pi
 
 #### Enable ssh access
 The easiest way to control the installation is from your PC/laptop, so it is advisable to enable SSH access on the pi, but you can also run everything on the Raspberry-Pi itself:
@@ -63,6 +64,7 @@ git clone https://github.com/devolksbank/Raspberry-Pi-Movidius-Person-Detector
 ### 4) Call the installation script
 The installation script can be called step-by-step, using:
 ```
+chmod u+x install*
 ./install-step1-ncs-api.sh
 ./install-step2-image-classifier.sh
 ./install-step3-opencv.sh
@@ -71,6 +73,7 @@ The installation script can be called step-by-step, using:
 
 Or by the single-command installer:
 ```
+chmod u+x install*
 ./install-full.sh
 ```
 
