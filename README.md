@@ -3,6 +3,8 @@ This project allows you to install a fully working person-detector using a singl
 
 We created this script so anyone can easily try this software/hardware out and experience what AI can do, to help you imagine what else you can do with it to help you in whatever project you're interested in!
 
+More information in [our blog (NL)](https://www.devolksbank.nl/artikel/object-detection-on-a-stiiiiiiiiiick.html)
+
 ![raspberry-pi](raspberry-pi-case.jpg "Raspberry-Pi")
 ![compute-stick](intel-movidius-neural-compute-stick.jpg "Intel Movidius Neural Compute Stick")
 ![webcam](logitech-webcam-c920.png "Logitech C920 webcam")
