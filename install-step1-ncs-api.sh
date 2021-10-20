@@ -14,9 +14,10 @@ sudo /etc/init.d/dphys-swapfile restart
 echo ">> Workspace creation"
 mkdir -p ~/workspace
 cd ~/workspace
-wget https://ncs-forum-uploads.s3.amazonaws.com/ncsdk/ncsdk-01_12_00_01-full/ncsdk-1.12.00.01.tar.gz
-tar xvf ncsdk-1.12.00.01.tar.gz
-ln -s ncsdk-1.12.00.01 ncsdk
+# See: https://github.com/movidius/ncsdk/blob/master/install.sh
+wget https://downloadmirror.intel.com/28192/eng/NCSDK-1.12.01.01.tar.gz
+tar xvf ncsdk-1.12.01.01.tar.gz
+ln -s ncsdk-1.12.01.01 ncsdk
 
 cd ~/workspace/ncsdk/api/src
 make && sudo make install
