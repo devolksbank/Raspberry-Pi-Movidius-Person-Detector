@@ -15,10 +15,14 @@ sudo apt-get install -y python2.7-dev python3-dev
 
 echo ">> Download opencv sources"
 cd ~
-wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.3.0.zip
+wget -O opencv-3.3.0.zip https://github.com/Itseez/opencv/archive/3.3.0.zip
+sha256sum -c "opencv-3.3.0.zip.sha256sum"
+mv opencv-3.3.0.zip opencv.zip
 unzip -o opencv.zip
 
-wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.3.0.zip
+wget -O opencv_contrib-3.3.0.zip https://github.com/Itseez/opencv_contrib/archive/3.3.0.zip
+sha256sum -c "opencv_contrib-3.3.0.zip.sha256sum"
+mv opencv_contrib-3.3.0.zip opencv_contrib.zip
 unzip -o opencv_contrib.zip
 
 echo ">> Create virtualenvironment"
