@@ -16,6 +16,7 @@ mkdir -p ~/workspace
 cd ~/workspace
 # See: https://github.com/movidius/ncsdk/blob/master/install.sh
 wget https://downloadmirror.intel.com/28192/eng/NCSDK-1.12.01.01.tar.gz
+sha256sum -c "ncsdk-1.12.01.01.tar.gz.sha256sum"
 tar xvf ncsdk-1.12.01.01.tar.gz
 ln -s ncsdk-1.12.01.01 ncsdk
 
